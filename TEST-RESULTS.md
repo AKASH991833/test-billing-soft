@@ -1,6 +1,6 @@
 # First-preview verification
 
-Executed 9 Oct 2026. Fake data only.
+Executed 9-10 Oct 2026. Fake data only.
 
 - Production Vite build passed.
 - 8 business-engine assertions passed.
@@ -10,3 +10,5 @@ Executed 9 Oct 2026. Fake data only.
 - Private review preview has session-only state for unauthenticated/agent preview. Owner review state is browser/account scoped. Standalone build uses localStorage; reload persistence was tested there.
 
 This verifies the tested first-preview paths, not every possible input or production deployment. No independent security audit or desktop-parity certification.
+
+Additional hosted-review checks: customer, invoice, partial-payment and settings save passed with keyboard Space activation, all 11 sections exercised at 320/390/1280, dark mode verified. Hosted iframe pointer automation had scroll-coordinate mismatch; standalone pointer flow passed.
