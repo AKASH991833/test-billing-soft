@@ -6,7 +6,7 @@ Browser-local service billing app with violet/glass dark and light themes, dense
 
 Open the GitHub Pages website, or download `index.html` and serve it locally with `python -m http.server`. The built HTML includes its CSS and JavaScript and does not load remote scripts, fonts or APIs.
 
-Editable source is in `1-test-billing-soft-v25-source.zip`. Extract it, then run:
+Editable source is in `1-test-billing-soft-v26-source.zip`. Extract it, then run:
 
 ```
 npm ci
@@ -61,3 +61,7 @@ Reports offers Export Excel with charts: Summary is sheet1, native editable Char
 Date/search filters apply by each dataset's own date field. AMC contracts, customer, team and inventory sheets are current/all-time snapshots with search applied. Monthly chart covers12 months ending at the selected To date (or today); receipts after today are excluded from that chart. Top customers and paid/due use selected invoice dates, excluding estimates. Receipt tables include actual selected invoice and AMC receipts. No profit claim or certified tax report.
 
 Clean CSV datasets remain available: stable IDs, ISO dates, UTF-8, plain numeric INR values and separate currency field. CSV cannot store styling or cell types: import ID/phone columns as Text in Excel. XLSX handles types. Formula-looking source text is stored as text; the workbook contains no macros or external connections. Blank means not applicable/unknown.
+
+## Direct section CSVs
+
+Every section has its own Export CSV button under its heading. Uses the same clean analytics columns. Visible search/date/payment filters are applied where offered; no hidden invoice date filter affects customer/stock/team/AMC sections. Overview exports the metric snapshot, Settings exports business identity/settings and Deleted Items exports the deleted record index. Use JSON backup for a full recoverable workspace. Payment and visit reminder exports include only the rows matching their reminder criteria.
