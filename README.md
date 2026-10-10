@@ -6,7 +6,7 @@ Browser-local service billing app with violet/glass dark and light themes, dense
 
 Open the GitHub Pages website, or download `index.html` and serve it locally with `python -m http.server`. The built HTML includes its CSS and JavaScript and does not load remote scripts, fonts or APIs.
 
-Editable source is in `1-test-billing-soft-v12-source.zip`. Extract it, then run:
+Editable source is in `1-test-billing-soft-v13-source.zip`. Extract it, then run:
 
 ```
 npm ci
@@ -34,6 +34,10 @@ For normal phone sizing, turn Chrome's Desktop site setting off. That setting ca
 
 This is a functional preview, not production accounting software. Data stays in this browser and origin, not GitHub or a shared server. It does not sync between devices. Data from another hosting origin is not transferred automatically: download a JSON backup there, then restore it here if needed.
 
-Keep backups. Browser storage can be cleared or fail. The preview has a small data-size limit (about 15 KB). JSON backups are not encrypted. There is no authentication, multi-user database, SMTP sending, real payment processing, XLSX export, or security guarantee. PDF output uses the browser print dialog.
+Keep backups. Browser storage can be cleared or fail. The workspace has a 2 MB data-size limit. Browser storage can still fail. JSON backups are not encrypted. There is no authentication, multi-user database, SMTP sending, real payment processing, XLSX export, or security guarantee. PDF output uses the browser print dialog.
 
 The earlier `source-initial.zip` is an archive of the first version, not the current source.
+
+## Fictional large demo
+
+New browsers start with 150 synthetic customers, 15 invoices between ₹15,000 and ₹20,000 and 15 varied AMC contracts. Indian names/area labels are examples; DEMO phone IDs and sample addresses are not real contacts. Existing browser records are preserved. To replace an old workspace, use Settings > Load 150-customer demo, download a backup, then confirm replacement.
