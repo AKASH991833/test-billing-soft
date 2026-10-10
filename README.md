@@ -6,7 +6,7 @@ Browser-local service billing app with violet/glass dark and light themes, dense
 
 Open the GitHub Pages website, or download `index.html` and serve it locally with `python -m http.server`. The built HTML includes its CSS and JavaScript and does not load remote scripts, fonts or APIs.
 
-Editable source is in `1-test-billing-soft-v24-source.zip`. Extract it, then run:
+Editable source is in `1-test-billing-soft-v25-source.zip`. Extract it, then run:
 
 ```
 npm ci
@@ -53,3 +53,11 @@ Invoice preview/print is a white document ordered shop, customer, technician, it
 - **Visit reminders** lists every incomplete overdue AMC visit and visits within the next30 days, with a manage action. Alerts are in-app, not background push notifications.
 
 Everything stays browser-local; only a deliberate device sharing action hands the chosen bill text to another app. No paid APIs, card or subscription is needed. Rates and due dates are included in JSON backups. Older valid backups without these fields still load.
+
+## Analytics export
+
+Reports offers Export Excel with charts: Summary is sheet1, native editable Charts is sheet2, then11 typed, styled data sheets plus Chart_data and Data_dictionary. Includes frozen headers, filters, striped Excel tables, numeric amounts, real Excel dates and Text IDs/phones. Four charts:12-month receipt trend, top customer billing, receipt-mode comparison and paid/due stacked balance. No server, paid library, API, subscription or card. Charts and values are export snapshots; re-export to refresh.
+
+Date/search filters apply by each dataset's own date field. AMC contracts, customer, team and inventory sheets are current/all-time snapshots with search applied. Monthly chart covers12 months ending at the selected To date (or today); receipts after today are excluded from that chart. Top customers and paid/due use selected invoice dates, excluding estimates. Receipt tables include actual selected invoice and AMC receipts. No profit claim or certified tax report.
+
+Clean CSV datasets remain available: stable IDs, ISO dates, UTF-8, plain numeric INR values and separate currency field. CSV cannot store styling or cell types: import ID/phone columns as Text in Excel. XLSX handles types. Formula-looking source text is stored as text; the workbook contains no macros or external connections. Blank means not applicable/unknown.
