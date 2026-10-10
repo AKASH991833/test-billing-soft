@@ -6,7 +6,7 @@ Browser-local service billing app with violet/glass dark and light themes, dense
 
 Open the GitHub Pages website, or download `index.html` and serve it locally with `python -m http.server`. The built HTML includes its CSS and JavaScript and does not load remote scripts, fonts or APIs.
 
-Editable source is in `1-test-billing-soft-v10-source.zip`. Extract it, then run:
+Editable source is in `1-test-billing-soft-v11-source.zip`. Extract it, then run:
 
 ```
 npm ci
@@ -21,7 +21,8 @@ The source uses React and TypeScript; the deployed output is static HTML, CSS an
 
 - Customers, invoices, estimates, GST/discount calculations and partial payments.
 - Per-line calculation: rate × quantity, rate × measurement (feet/metres), or flat rate-only charge. Copper pipe, wire/cable, insulation tube/foam and aluminium pipe suggest per-foot measurement. PVC, gas refill/charging, installation/service/visiting charges, jet-pump/deep cleaning and repair suggest flat charges. Stand/bracket, capacitor, PCB, motor, remote, filter and unknown parts use quantity. These are suggested billing defaults, not universal rules; review or override each line. Type an item name to see matching suggestions; use arrows then Enter/Tab or tap a suggestion to fill it. Free-text items are allowed. Suggestions apply to new lines until you choose a manual basis. The form includes Hindi-English How to use guidance and examples beside each calculation mode. Existing invoices keep their original quantity-based calculation until explicitly changed. Print, CSV, totals and tax use the same formula.
-- AMC contracts and service visits, daily jobs, stock movements, technician commission and cash handovers.
+- AMC: 1/2-year contracts, whole-term included service count, planned dates/times, service types, completed/overdue visits, advance and receipt history, balance and AMC CSV. End date is the last covered day. Suggested schedules must be reviewed; no automatic invites/reminders. Existing legacy contracts keep dates and visits until edited. AMC receipts are separate from invoice receipts: log money once, not in both ledgers. Contract amount is the final whole-term agreed amount; no AMC tax calculation or payment collection.
+- Daily jobs, stock movements, technician commission and cash handovers.
 - Period reports, Excel-compatible CSV, browser Print/Save PDF, JSON backup/restore and deleted-record recovery.
 - Full-width, full-viewport-height workspace with no centered outer frame.
 - Dense column-and-row tables. Phones use the section picker and a per-row Details control. Wide viewports, including Chrome Desktop site on phones, show the sidebar by default. The Phone layout button can force the compact app layout.
