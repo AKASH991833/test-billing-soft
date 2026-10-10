@@ -6,7 +6,7 @@ Browser-local service billing app with violet/glass dark and light themes, dense
 
 Open the GitHub Pages website, or download `index.html` and serve it locally with `python -m http.server`. The built HTML includes its CSS and JavaScript and does not load remote scripts, fonts or APIs.
 
-Editable source is in `1-test-billing-soft-v22-source.zip`. Extract it, then run:
+Editable source is in `1-test-billing-soft-v23-source.zip`. Extract it, then run:
 
 ```
 npm ci
@@ -43,3 +43,13 @@ The earlier `source-initial.zip` is an archive of the first version, not the cur
 New browsers start with 150 synthetic customers, 15 invoices between ₹15,000 and ₹20,000 and 15 varied AMC contracts. Indian names/area labels are examples; Zero-prefixed dummy phone digits and sample addresses are not real contacts. Existing browser records are preserved. To replace an old workspace, use Settings > Load 150-customer demo, download a backup, then confirm replacement.
 
 Invoice preview/print is a white document ordered shop, customer, technician, items and totals. Optional phone/email/GSTIN can be set in Settings. GST/GSTIN are hidden when the invoice GST rate is zero. A4 printing uses the browser Save PDF dialog; this is a billing preview, not a certified tax-invoice system.
+
+## New local tools
+
+- **Share via WhatsApp** opens the device share menu where supported: choose WhatsApp, review the customer/message and send. Unsupported browsers offer complete bill-text copy/download. No automatic send, public invoice link or PDF upload. Use Print / Save PDF to attach a PDF manually.
+- **Payment reminders** lists pending invoice balances. Set an optional payment due date while editing a bill to see actual overdue days. Without one, it shows days unpaid. Estimates and AMC balances are excluded.
+- **Monthly collections** shows the last six calendar months using receipt dates, split into invoice and AMC receipts. This is received revenue, not profit. Top customers uses invoice-date filters and billed invoice totals, excluding estimates and AMC.
+- **Service rate card** saves rate, calculation type and unit. Typing/selecting an exact saved item name fills those values during billing. Manual overrides remain possible. Changing or deleting a rate never changes an existing bill.
+- **Visit reminders** lists every incomplete overdue AMC visit and visits within the next30 days, with a manage action. Alerts are in-app, not background push notifications.
+
+Everything stays browser-local; only a deliberate device sharing action hands the chosen bill text to another app. No paid APIs, card or subscription is needed. Rates and due dates are included in JSON backups. Older valid backups without these fields still load.
