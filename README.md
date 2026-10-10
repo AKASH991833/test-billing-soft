@@ -22,7 +22,7 @@ The source uses React and TypeScript; the deployed output is static HTML, CSS an
 - Customers, invoices, estimates, GST/discount calculations and partial payments.
 - AMC contracts and service visits, daily jobs, stock movements, technician commission and cash handovers.
 - Period reports, Excel-compatible CSV, browser Print/Save PDF, JSON backup/restore and deleted-record recovery.
-- Dense column-and-row tables. Phones use the section picker and a per-row Details control. Touch devices also receive the phone layout at desktop-sized widths up to 1100px. The Phone layout button can force the compact app layout.
+- Dense column-and-row tables. Phones use the section picker and a per-row Details control. Wide viewports, including Chrome Desktop site on phones, show the sidebar by default. The Phone layout button can force the compact app layout.
 - Dark/light themes and browser-local state. Only fictional demo records are shipped.
 
 For normal phone sizing, turn Chrome's Desktop site setting off. That setting can zoom out the entire website independently of the app's layout.
