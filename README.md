@@ -6,7 +6,7 @@ Browser-local service billing app with violet/glass dark and light themes, dense
 
 Open the GitHub Pages website, or download `index.html` and serve it locally with `python -m http.server`. The built HTML includes its CSS and JavaScript and does not load remote scripts, fonts or APIs.
 
-Editable source is in `1-test-billing-soft-v14-source.zip`. Extract it, then run:
+Editable source is in `1-test-billing-soft-v15-source.zip`. Extract it, then run:
 
 ```
 npm ci
@@ -40,6 +40,6 @@ The earlier `source-initial.zip` is an archive of the first version, not the cur
 
 ## Fictional large demo
 
-New browsers start with 150 synthetic customers, 15 invoices between ₹15,000 and ₹20,000 and 15 varied AMC contracts. Indian names/area labels are examples; DEMO phone IDs and sample addresses are not real contacts. Existing browser records are preserved. To replace an old workspace, use Settings > Load 150-customer demo, download a backup, then confirm replacement.
+New browsers start with 150 synthetic customers, 15 invoices between ₹15,000 and ₹20,000 and 15 varied AMC contracts. Indian names/area labels are examples; Zero-prefixed dummy phone digits and sample addresses are not real contacts. Existing browser records are preserved. To replace an old workspace, use Settings > Load 150-customer demo, download a backup, then confirm replacement.
 
 Invoice preview/print is a white document ordered shop, customer, technician, items and totals. Optional phone/GSTIN can be set in Settings. GST/GSTIN are hidden when the invoice GST rate is zero. A4 printing uses the browser Save PDF dialog; this is a billing preview, not a certified tax-invoice system.
