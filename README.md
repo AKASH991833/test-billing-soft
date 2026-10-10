@@ -6,7 +6,7 @@ Browser-local service billing app with violet/glass dark and light themes, dense
 
 Open the GitHub Pages website, or download `index.html` and serve it locally with `python -m http.server`. The built HTML includes its CSS and JavaScript and does not load remote scripts, fonts or APIs.
 
-Editable source is in `1-test-billing-soft-v6-source.zip`. Extract it, then run:
+Editable source is in `1-test-billing-soft-v7-source.zip`. Extract it, then run:
 
 ```
 npm ci
@@ -22,6 +22,7 @@ The source uses React and TypeScript; the deployed output is static HTML, CSS an
 - Customers, invoices, estimates, GST/discount calculations and partial payments.
 - AMC contracts and service visits, daily jobs, stock movements, technician commission and cash handovers.
 - Period reports, Excel-compatible CSV, browser Print/Save PDF, JSON backup/restore and deleted-record recovery.
+- Full-width, full-viewport-height workspace with no centered outer frame.
 - Dense column-and-row tables. Phones use the section picker and a per-row Details control. Wide viewports, including Chrome Desktop site on phones, show the sidebar by default. The Phone layout button can force the compact app layout.
 - Dark/light themes and browser-local state. Only fictional demo records are shipped.
 
