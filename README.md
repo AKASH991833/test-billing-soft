@@ -65,3 +65,7 @@ Clean CSV datasets remain available: stable IDs, ISO dates, UTF-8, plain numeric
 ## Direct section CSVs
 
 Every section has its own Export CSV button under its heading. Uses the same clean analytics columns. Visible search/date/payment filters are applied where offered; no hidden invoice date filter affects customer/stock/team/AMC sections. Overview exports the metric snapshot, Settings exports business identity/settings and Deleted Items exports the deleted record index. Use JSON backup for a full recoverable workspace. Payment and visit reminder exports include only the rows matching their reminder criteria.
+
+## Formatted section exports (v27)
+
+Every section now has a primary **Export Excel** (.xlsx) button and a secondary **Export CSV** button. Excel preserves styled headers, striped tables, header sort/filter dropdowns, frozen first row, sensible widths, wrapped text/row heights, numeric INR amounts and real dates. IDs/phones stay Text. First sheet is section data; Export_info records scope/current filters and Data_dictionary explains types. Empty results retain headers and filters. This is a static browser-local export, not live sync. CSV cannot preserve visual formatting or filter controls. Open .xlsx in Excel/LibreOffice or an Excel-compatible spreadsheet app; basic phone previewers may not offer filter controls. Reports still offers the full workbook with Charts on the second sheet.
