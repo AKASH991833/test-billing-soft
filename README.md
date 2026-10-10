@@ -6,7 +6,7 @@ Browser-local service billing app with violet/glass dark and light themes, dense
 
 Open the GitHub Pages website, or download `index.html` and serve it locally with `python -m http.server`. The built HTML includes its CSS and JavaScript and does not load remote scripts, fonts or APIs.
 
-Editable source is in `2-test-billing-soft-source.zip`. Extract it, then run:
+Editable source is in `1-test-billing-soft-v6-source.zip`. Extract it, then run:
 
 ```
 npm ci
