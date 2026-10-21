@@ -1,6 +1,12 @@
 # Billing Studio - test-billing-soft
 
-Browser-local service billing app with violet/glass dark and light themes, dense spreadsheet tables and linked records. The public website is hosted using GitHub Pages from this repository.
+Browser-local service billing app with violet/glass dark and light themes, dense spreadsheet tables and linked records.
+
+**Live app:** https://akash991833.github.io/test-billing-soft/
+
+![Billing Studio workspace](screenshots/home-desktop.png)
+
+![Invoice preview](preview.png)
 
 ## Run
 
